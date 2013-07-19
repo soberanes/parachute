@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8" />
+	<link rel="stylesheet" type="text/css" href="css/parachute.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parachute.js"></script>
+	<title>Parachute Social Share Plugin Example</title>
+</head>
+<body>
+	<div id="main">
+		<h1>
+			Parachute Share Selector
+		</h1>
+		<br>
+		<div class="buttons">
+			<h3>Facebook</h3>
+			<a href="http://www.paulsoberanes.com" class="share_button" 
+						data-network="facebook" >Parachute</a>
+			<p class="description">I wanto to share with all of you friends of Twitter this amazing web site :) </p>
+			<hr>
+			<h3>Twitter</h3>
+			<a href="http://www.paulsoberanes.com" class="share_button" 
+						data-network="twitter" data-via="psoberanes_" >Parachute</a>
+			<p class="description">I wanto to share with all of you friends of Twitter this amazing web site </p>
+			<hr>
+			<h3>Google</h3>
+			<a href="http://www.paulsoberanes.com" class="share_button">Parachute</a>
+			<p class="description">I wanto to share with all of you friends of Google this amazing web site :) </p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).on("ready", function(){
+
+			$('.share_button').parachute();
+
+		});
+	</script>
+</body>
+</html>
